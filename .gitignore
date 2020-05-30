@@ -1,3 +1,14 @@
+.DS_Store
+/data
+*.pdf
+*.docx
+/figures0
+cache
+/.data
+test.*
+
+
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -10,11 +21,10 @@
 *.fot
 *.cb
 *.cb2
-.*.lb
+*.xdv
 
 ## Intermediate documents:
 *.dvi
-*.xdv
 *-converted-to.*
 # these rules might exclude image files for figures etc.
 # *.ps
@@ -30,6 +40,7 @@
 *.blg
 *-blx.aux
 *-blx.bib
+*.brf
 *.run.xml
 
 ## Build tool auxiliary files:
@@ -39,10 +50,6 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
-
-## Build tool directories for auxiliary files
-# latexrun
-latex.out/
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
@@ -61,17 +68,8 @@ acs-*.bib
 *.snm
 *.vrb
 
-# changes
-*.soc
-
-# comment
-*.cut
-
 # cprotect
 *.cpt
-
-# elsarticle (documentclass of Elsevier journals)
-*.spl
 
 # endnotes
 *.ent
@@ -85,6 +83,8 @@ acs-*.bib
 *.t[1-9]
 *.t[1-9][0-9]
 *.tfm
+*.[1-9]
+*.[1-9][0-9]
 
 #(r)(e)ledmac/(r)(e)ledpar
 *.end
@@ -109,11 +109,6 @@ acs-*.bib
 *.glo
 *.gls
 *.glsdefs
-*.lzo
-*.lzs
-
-# uncomment this for glossaries-extra (will ignore makeindex's style files!)
-# *.ist
 
 # gnuplottex
 *-gnuplottex-*
@@ -121,14 +116,6 @@ acs-*.bib
 # gregoriotex
 *.gaux
 *.gtex
-
-# htlatex
-*.4ct
-*.4tc
-*.idv
-*.lg
-*.trc
-*.xref
 
 # hyperref
 *.brf
@@ -142,22 +129,17 @@ acs-*.bib
 # listings
 *.lol
 
-# luatexja-ruby
-*.ltjruby
-
 # makeidx
 *.idx
 *.ilg
 *.ind
+*.ist
 
 # minitoc
 *.maf
 *.mlf
 *.mlt
 *.mtc[0-9]*
-*.slf[0-9]*
-*.slt[0-9]*
-*.stc[0-9]*
 
 # minted
 _minted*
@@ -166,16 +148,11 @@ _minted*
 # morewrites
 *.mw
 
+# mylatexformat
+*.fmt
+
 # nomencl
-*.nlg
 *.nlo
-*.nls
-
-# pax
-*.pax
-
-# pdfpcnotes
-*.pdfpc
 
 # sagetex
 *.sagetex.sage
@@ -198,9 +175,6 @@ sympy-plots-for-*.tex/
 *.pytxcode
 pythontex-files-*/
 
-# tcolorbox
-*.listing
-
 # thmtools
 *.loe
 
@@ -212,25 +186,14 @@ pythontex-files-*/
 # todonotes
 *.tdo
 
-# vhistory
-*.hst
-*.ver
-
 # easy-todo
 *.lod
-
-# xcolor
-*.xcp
-
-# xmpincl
-*.xmpi
 
 # xindy
 *.xdy
 
-# xypic precompiled matrices and outlines
+# xypic precompiled matrices
 *.xyc
-*.xyd
 
 # endfloat
 *.ttt
@@ -247,30 +210,14 @@ TSWLatexianTemp*
 # Texpad
 .texpadtmp
 
-# LyX
-*.lyx~
-
 # Kile
 *.backup
-
-# gummi
-.*.swp
 
 # KBibTeX
 *~[0-9]*
 
-# TeXnicCenter
-*.tps
-
-# auto folder when using emacs and auctex
-./auto/*
-*.el
+# auto folder when using emacs and auctex 
+/auto/*
 
 # expex forward references with \gathertags
 *-tags.tex
-
-# standalone packages
-*.sta
-
-# Makeindex log files
-*.lpz

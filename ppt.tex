@@ -1,0 +1,197 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[14pt, AutoFakeBold]{ldr}
+  
+
+% 你要是非要把
+\title{本 科 生 毕 业 答 辩}
+\subtitle{毕业答辩题目题目题目题目题目题目题目题目}
+
+% 记得改啊。。。。可不是我答辩 ~
+\author{答辩人：余航}
+\institute{指导老师：xx教授}
+\date{\today}
+\titlegraphic{\includegraphics[height=0.15\textwidth]{lzu_logo.png}}
+
+
+\begin{document}
+
+\maketitle
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{\insertshorttitle}
+    \tableofcontents[currentsection,hideallsubsections]
+  \end{frame}
+}
+
+\section{研究背景}
+\subsection{三级标题}
+
+
+\begin{frame}[c]{列表怎么用}
+就是下面这么用，前面是个点点，原因是我在模板里自定义了，你可以修改，模板中搜索：列表前面的点点自定义
+  \begin{itemize}
+  \item 简捷易行
+  \item 保存原文的格调和“洋味”
+  \item[1] 你是可以用数字的
+  \item[2] 你是可以用数字的
+  \end{itemize}
+还有这一种，也挺好看的
+  \begin{enumerate}
+    \item 测试
+    \item 测试
+  \end{enumerate}
+\end{frame}
+
+
+
+
+\begin{frame}
+  \frametitle{每一页内容位置}
+
+  内容老是居中，我想让它居上怎么办？看下一页
+
+
+\end{frame}
+
+\begin{frame}[t]{每一页内容位置}
+
+  这句话在上面了吧，原因是上面那个[t]，默认[c]（居中）
+
+
+\end{frame}
+
+
+
+\section{主要内容}
+
+\begin{frame}
+  \frametitle{图并排}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{lzu_logo.png}
+  
+    \caption{兰州大学（单图）\footnotesize 小字可以这么来}
+    \label{fig_lzu}
+\end{figure}
+  
+\end{frame}
+\begin{frame}
+  \frametitle{图并排}
+  \begin{figure}[H]
+    \centering
+    \subfloat[图1]{
+        \label{fig_lzus_0}
+        \includegraphics[width=0.3\textwidth]{lzu_logo.png}
+    }
+    \subfloat[图2]{
+        \label{fig_lzus_1}
+        \includegraphics[width=0.3\textwidth]{lzu_logo.png}
+    }\\
+    \caption{兰州大学}
+    \label{fig_lzus}
+\end{figure}
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{表格}
+  \begin{table}[H]
+    \centering
+    \caption{纳米管参数}
+    \begin{tabular}{cccccc} % 控制表格的格式
+        \toprule
+        参数 & m  & n  & 原子数 & 内径     & 长度    \\
+        \midrule
+        二硫化钼纳米管  & 15 & 15 & 3420   & 2.3014nm & 11.85nm \\
+        碳纳米管  & 16 & 6  & 1112   & 1.5424nm & 6.0nm   \\
+        \bottomrule
+    \end{tabular}
+    \label{tbl_mcnt_nanotube}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{左右分栏}
+去掉 pause  就不会变成两页了
+  \begin{columns}
+  \column{0.6\textwidth}
+
+    \begin{itemize}
+    \item Ice Age
+    \item The Hobbit
+    \item The Great Gatsby
+    \end{itemize}
+  \pause
+  \column{0.4\textwidth}
+    \begin{itemize}
+    \item 冰河世纪
+    \item 霍比特人
+    \item 了不起的盖茨比
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{分步动画}
+
+
+  \onslide<1>{
+    第一步显示这一句话，第二步时消失
+  }
+  \onslide<2,3>{
+    \begin{block}{解析：}
+      第二、三步显示这一句话
+    \end{block}
+  }
+
+  \onslide<3>{
+    只有第三步显示这一句话
+  }
+
+\end{frame}
+
+\section{总结展望}
+
+\begin{frame}
+  \frametitle{测试}
+
+  \begin{block}{方框}
+    测试一下，参考一篇文献\cite{partl2016}
+  \end{block}
+
+\end{frame}
+
+
+\section{参考文献}
+\begin{frame}[t]
+  \frametitle{参考文献}
+  % 这里会把ppt引用的参考文献全部在这里显示
+  \bibliographystyle{bib/lzubib}
+  \bibliography{bib/database}
+  
+\end{frame}
+
+\section{致谢}
+
+\begin{frame}[t]
+\frametitle{致谢}
+  % 注意致谢内容答辩时不要读出来，播放到这里就可以了
+  \begin{itemize}
+  \item 感谢老师
+  \item 感谢同学
+  \item 感谢学校
+  \item 感谢父母
+  \end{itemize}
+\end{frame}
+
+
+
+
+
+
+\end{document}
