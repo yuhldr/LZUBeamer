@@ -1,10 +1,11 @@
+更多LaTex模板资源可以来：[latexstudio](https://www.latexstudio.net)，资源和一些教程确实不错
 
 # 兰州大学本科生2020（学士学位）毕业答辩模板（Beamer）
    ![图](figures/ppt.png)
 
 ## 为什么选择这个模板
 
-1. 因为这是i兰大易班（兰朵儿）app的开发者制作的 ~
+1. 因为这是兰朵儿app的开发者制作的 ~
 2. 因为这个模板逻辑、用法与毕业论文那个模板LZUThesis2020（[Gitee](https://gitee.com/yuhldr/LZUThesis2020)、[Github](https://github.com/yuhlzu/LZUThesis2020)）是一致的
 3. 因为这个模板经过了多人多平台测试，包括Mac、Windows、Linux三种平台
 4. 因为这个项目有最为详尽的文档说明
@@ -24,4 +25,4 @@
 
 ## 常见问题
 
-参考这里的吧吧：[常见问题](https://gitee.com/yuhldr/LZUThesis2020#%E4%BA%8C%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+参考这里的吧：[常见问题](https://gitee.com/yuhldr/LZUThesis2020#%E4%BA%8C%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)

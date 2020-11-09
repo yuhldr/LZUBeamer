@@ -65,7 +65,7 @@
 %============================ 我自己用的一些小命令 =========%
 
 \RequirePackage{tasks}%选择题宏包，tasks环境
-\RequirePackage{paralist,cases,tabularx}
+\RequirePackage{cases,tabularx}
 
 % 带圈的序号
 \newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
