@@ -19,7 +19,7 @@
 
 ## 我是小白，怎么学习
 
-1. 请看同时查看 [ppt.tex](/ppt.tex) 和 [ppt.tex](/ppt.tex) 这两个文件
+1. 请看同时查看 [ppt.pdf](/ppt.pdf) 和 [ppt.tex](/ppt.tex) 这两个文件
 2. 请查看other这个目录里面的文件 [Beamer3.0中文指南](/other/Beamer3.0中文指南.pdf)、[Beamer3.24中文用户手册](/other/Beamer3.24中文用户手册.pdf)、[Beamer学习笔记](/other/Beamer学习笔记.pdf)，网上找的，侵权请联系我删除
 3. 封面logo、右上角logo等想修改，other这个目录提供了psd文件（用官网的文件修改的），可以方便大家后续修改。
 
